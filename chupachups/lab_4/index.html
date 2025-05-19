@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Інформація про браузер + Коментарі + Форма</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Мій навчальний сайт</h1>
+    <button id="toggle-theme">Змінити тему</button>
+  </header>
+
+  <main>
+    <section id="comments-section">
+      <h2>Коментарі роботодавців</h2>
+      <div id="comments"></div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Інформація про браузер та ОС:</h3>
+    <div id="local-info"></div>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Форма зворотного зв'язку</h2>
+      <form action="https://formspree.io/f/ВАШ_ЕНДПОЙНТ" method="POST">
+        <input type="text" name="name" placeholder="Ім’я" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Номер телефону" required>
+        <textarea name="message" placeholder="Повідомлення" required></textarea>
+        <button type="submit">Відправити</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

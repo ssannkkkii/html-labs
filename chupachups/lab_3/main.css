@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.cv {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cv__header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cv__name {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.cv__title {
+  font-size: 18px;
+  color: #777;
+}
+
+.cv__section {
+  margin-bottom: 25px;
+}
+
+.cv__section-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cv__item {
+  margin-bottom: 10px;
+}
+
+.cv__item-title {
+  font-weight: bold;
+}
+
+.cv__item-subtitle {
+  font-style: italic;
+  color: #555;
+}
+
+.cv__item-description {
+  margin: 5px 0;
+}

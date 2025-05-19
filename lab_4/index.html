@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <title>Лабораторна 4</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Навчальний проєкт</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-    <button id="theme-toggle" class="theme-toggle">Перемкнути тему</button>
+  <header>
+    <h1>Мій сайт</h1>
+    <button id="theme-toggle">Змінити тему</button>
+  </header>
 
-    <div id="modal" class="modal">
-        <div class="modal__content">
-            <h2 class="modal__title">Форма зворотнього зв'язку</h2>
-            <form id="contact-form" class="modal__form" action="https://formspree.io/f/ВАШ_ЕНДПОЙНТ" method="POST">
-                <label for="name" class="modal__label">Ім'я:</label>
-                <input type="text" id="name" name="name" class="modal__input" required>
-
-                <label for="email" class="modal__label">Email:</label>
-                <input type="email" id="email" name="email" class="modal__input" required>
-
-                <label for="phone" class="modal__label">Номер телефону:</label>
-                <input type="tel" id="phone" name="phone" class="modal__input" required>
-
-                <label for="message" class="modal__label">Повідомлення:</label>
-                <textarea id="message" name="message" rows="4" class="modal__textarea" required></textarea>
-
-                <button type="submit" class="modal__submit">Відправити</button>
-            </form>
-            <button id="close-modal" class="modal__close">Закрити</button>
-        </div>
-    </div>
-
-    <section id="comments-section" class="comments-section">
-        <h2 class="comments-section__title">Коментарі роботодавців:</h2>
-        <ul id="comments-list" class="comments-section__list"></ul>
+  <main>
+    <section id="comments">
+      <h2>Коментарі попередніх роботодавців</h2>
+      <div id="comments-container"></div>
     </section>
+  </main>
 
-    <footer id="footer-info" class="footer-info">
-        <h3 class="footer-info__title">Інформація про браузер та ОС:</h3>
-        <pre id="storage-data" class="footer-info__data"></pre>
-    </footer>
+  <footer>
+    <h3>Інформація про браузер:</h3>
+    <pre id="browser-info"></pre>
+  </footer>
 
-    <script src="script.js"></script>
+  <!-- Модальне вікно -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h2>Зворотній зв'язок</h2>
+      <form action="https://formspree.io/f/ВАШ_ЕНДПОЙНТ" method="POST">
+        <input type="text" name="name" placeholder="Ім’я" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Номер телефону" required />
+        <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+        <button type="submit">Відправити</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
